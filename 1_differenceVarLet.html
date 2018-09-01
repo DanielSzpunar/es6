@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <p id="cat">hello</p>
+        <script>
+            //unlike var, variables that begin with let can only be declared once otherwise they throw an error. "use strict"; must be included.
+            let catName;
+            let quote;
+            function catTalk() {
+                "use strict";
+                catName = "Oliver";
+                quote = catName + " say's meow!";
+                return quote;
+            }
+            var test = catTalk();   
+            document.getElementById("cat").innerHTML = test;
+        </script>
+    </body>
+</html>
